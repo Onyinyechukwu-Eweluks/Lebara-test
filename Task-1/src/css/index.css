@@ -31,6 +31,15 @@ body {
   right: 6.77%;
   top: 7.64%;
 }
+.mobile-navbar,
+.mobile-nav-wrapper,
+.mobile-pilot-bar,
+.mobile-section-one,
+.mobile-section > img,
+.mobile-section2 > img,
+.mobile-section-two {
+  display: none;
+}
 .nav-wrapper-left {
   display: flex;
   flex-direction: row;
@@ -48,7 +57,6 @@ body {
   padding: 0px;
   gap: 30px;
   width: 450px;
-  height: 22px;
 }
 .logo {
   margin-top: 3px;
@@ -279,4 +287,206 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 407px) {
+  .navbar,
+  .nav-wrapper,
+  .pilot-bar,
+  .section-one,
+  .section-two {
+    display: none;
+  }
+  /* Navbar */
+  .mobile-navbar {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 16px;
+    gap: 10px;
+    width: 375px;
+    height: 64px;
+    background: #ffffff;
+  }
+  .mobile-pilot-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 12px;
+
+    width: 375px;
+    height: 48px;
+
+    background: #199ef7;
+  }
+  .mobile-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    position: relative;
+    padding-top: 6px;
+  }
+  .mobile-nav-wrapper > .nav-wrapper-right > .nav-list {
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 88px;
+    height: 42px;
+  }
+  .mobile-nav-wrapper > .nav-wrapper-right > .nav-list > .nav-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 35px;
+    height: 42px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+  /* Trustpilot bar */
+  .mobile-pilot-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 57px;
+    gap: 12px;
+    list-style-type: none;
+    width: 375px;
+    height: 48px;
+    background: #199ef7;
+  }
+  /* Section One */
+  .mobile-section {
+    width: 407px;
+    background: linear-gradient(180deg, #3c2da0 50.61%, #f6f8ff 50.63%);
+  }
+  .mobile-section > img,
+  .mobile-section2 > img {
+    width: 407px;
+    display: flex;
+  }
+  .mobile-section-one {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 16px;
+    gap: 10px;
+    width: 375px;
+    height: 338px;
+    background: linear-gradient(180deg, #3c2da0 50.61%, #f6f8ff 50.63%);
+  }
+  .mobile-section-one > .container,
+  .mobile-section-two > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px 38px;
+    gap: 24px;
+    width: 343px;
+    height: 338px;
+    background: #ffffff;
+    box-shadow: 0px 16px 40px rgba(49, 86, 153, 0.15);
+    border-radius: 8px;
+  }
+  .mobile-section-one > .container > .wrapper-one,
+  .mobile-section-two > .container > .wrapper-two {
+    display: flex;
+    flex-direction: column;
+    font-family: "Chiswick Grot Lebara App";
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #3c2da0;
+    padding: 0px;
+    width: 295px;
+    height: 92px;
+  }
+  .mobile-section-one > .container > .wrapper-one > p,
+  .mobile-section-two > .container > .wrapper-two > p {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+  }
+  .mobile-section-one > .container > .wrapper-one > span,
+  .mobile-section-two > .container > .wrapper-two > span {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .mobile-section-one > .container > button,
+  .mobile-section-two > .container > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    width: 295px;
+    height: 52px;
+    border-radius: 8px;
+    border-color: rgba(26, 31, 69, 0.75);
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .primary {
+    background: #ff3182;
+    box-shadow: 0px 4px 22px rgba(255, 49, 130, 0.25);
+    border-color: transparent !important;
+    color: #ffffff;
+  }
+  .mobile-section-one > .container > ul,
+  .mobile-section-two > .container > ul {
+    height: 68px;
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+  }
+  .mobile-section-one > .container > ul > li,
+  .mobile-section-two > .container > ul > li {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .mobile-section-one > .container > ul > li > img,
+  .mobile-section-two > .container > ul > li > img {
+    width: 1.5em;
+    margin-right: 0.25em;
+    padding-bottom: 0.15em;
+    vertical-align: middle;
+  }
+  /* ection Two */
+  .mobile-section2 {
+    width: 407px;
+    padding-top: 5em;
+    background: linear-gradient(180deg, #f6f8ff 40.61%, #0489ec 60.63%);
+  }
+  .mobile-section-two {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 16px;
+    gap: 10px;
+    width: 375px;
+    height: 446px;
+    background: #0489ec;
+  }
 }
