@@ -1,0 +1,44 @@
+.section-one {
+  margin-top: 0 !important;
+}
+.text {
+  margin-top: 4em;
+  gap: 12px;
+  height: 96px;
+  color: #ffffff;
+}
+
+.text-header {
+  font-family: 'Roboto';
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.text-body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .text {
+    height: 88px;
+  }
+  .text-header {
+    width: 295px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .text-body {
+    width: 295px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

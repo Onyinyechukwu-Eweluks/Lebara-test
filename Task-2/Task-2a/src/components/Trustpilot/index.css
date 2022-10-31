@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap");
+
+
+.pilot-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0px;
+  gap: 15px;
+  width: 545px;
+  height: 32px;
+  list-style-type: none;
+}
+.pilot-list-item {
+  height: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.pilot-logo {
+  padding-bottom: 0.3em;
+}
+
+@media only screen and (max-width: 700px) {
+  .pilot-list {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 57px;
+    gap: 12px;
+    width: 375px;
+    height: 48px;
+    background: #199ef7;
+  }
+  .pilot-list-item:nth-child(1), .pilot-list-item:nth-child(3) {
+    display: none;
+  }
+}

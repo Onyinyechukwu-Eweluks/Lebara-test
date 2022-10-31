@@ -8,6 +8,15 @@ body {
   font-family: "Roboto";
   font-style: normal;
 }
+.mobile-navbar,
+.mobile-nav-wrapper,
+.mobile-pilot-bar,
+.mobile-section-one,
+.mobile-section > img,
+.mobile-section2 > img,
+.mobile-section-two {
+  display: none;
+}
 /* Navbar */
 .navbar {
   width: 100%;
@@ -31,15 +40,7 @@ body {
   right: 6.77%;
   top: 7.64%;
 }
-.mobile-navbar,
-.mobile-nav-wrapper,
-.mobile-pilot-bar,
-.mobile-section-one,
-.mobile-section > img,
-.mobile-section2 > img,
-.mobile-section-two {
-  display: none;
-}
+
 .nav-wrapper-left {
   display: flex;
   flex-direction: row;
@@ -290,7 +291,7 @@ body {
 }
 
 /* Mobile View */
-@media screen and (max-width: 407px) {
+@media only screen and (max-width: 407px) {
   .navbar,
   .nav-wrapper,
   .pilot-bar,
@@ -309,19 +310,6 @@ body {
     width: 375px;
     height: 64px;
     background: #ffffff;
-  }
-  .mobile-pilot-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 16px;
-    gap: 12px;
-
-    width: 375px;
-    height: 48px;
-
-    background: #199ef7;
   }
   .mobile-nav-wrapper {
     display: flex;
@@ -356,6 +344,19 @@ body {
     text-align: center;
   }
   /* Trustpilot bar */
+  .mobile-pilot-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 12px;
+
+    width: 375px;
+    height: 48px;
+
+    background: #199ef7;
+  }
   .mobile-pilot-list {
     display: flex;
     flex-direction: row;
